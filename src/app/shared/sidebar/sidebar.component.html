@@ -1,1 +1,15 @@
-<p>sidebar works!</p>
+<h2>Busquedas</h2>
+<hr>
+<ul class="list-group">
+    <!-- [routerLinkActiveOptions]="{ exact: true }" esto es por la configuracion que le dimos en el routing.module
+                ya que el path es vacio, queremos que este muestre si y solo si esta en la ruta especifica. -->
+    <li routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="list-group-item">
+        Buscar pais
+    </li>
+    <li routerLink="region" routerLinkActive="active" class="list-group-item">
+        Buscar region
+    </li>
+    <li routerLink="capital" routerLinkActive="active" class="list-group-item">
+        Buscar capital
+    </li>
+</ul>
