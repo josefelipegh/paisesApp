@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
 import { PaisService } from '../../services/pais.service';
 import { Country } from '../../interfaces/pais.interface';
 
@@ -11,7 +10,7 @@ import { Country } from '../../interfaces/pais.interface';
 })
 export class PorPaisComponent {
 
-  termino: string = 'Venezuela';
+  termino: string = '';
   hayError: boolean = false;
   paises  : Country[] = [];
 
