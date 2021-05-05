@@ -33,8 +33,12 @@ export class PorRegionComponent implements OnInit {
   }
 
   activateRegion( region: string ){
+
+    if( region === this.regionActive ) { return; }
+
     this.regionActive = region;
     this.hayError = false;
+    this.paises = [];
     this._countryServices.buscarRegion(region)
         .subscribe(paises => {
           this.paises = paises;
